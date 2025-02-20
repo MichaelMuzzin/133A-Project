@@ -59,7 +59,7 @@ sol_data = sol_data[['timestamp', 'symbol', 'open', 'high', 'low', 'close', 'vol
 sol_data['timestamp'] = pd.to_datetime(sol_data['timestamp'])
 sol_data = sol_data.sort_values(by="timestamp").reset_index(drop=True)
 
-### ✅ Step 4: Compute 30 Technical Indicators
+# Compute 30 Technical Indicators
 sol_data['SMA_10']        = talib.SMA(sol_data['close'], timeperiod=10)
 sol_data['SMA_50']        = talib.SMA(sol_data['close'], timeperiod=50)
 sol_data['EMA_10']        = talib.EMA(sol_data['close'], timeperiod=10)
@@ -88,7 +88,7 @@ print(f"Final dataframe shape: {sol_data.shape}")
 if sol_data.shape[0] < 10000:
     print(f"Warning: Final dataframe has only {sol_data.shape[0]} rows, which is less than 10,000.")
 else:
-    print("✅ Dataframe has at least 10,000 rows.")
+    print(" Dataframe has at least 10,000 rows.")
 
 # Save the dataframe to CSV
 sol_data.to_csv("solana_trading_features_10000_1Min.csv", index=False)
