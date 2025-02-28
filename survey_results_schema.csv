@@ -1,0 +1,32 @@
+qid,qname,question,force_resp,type,selector
+QID2,MainBranch,"Which of the following options best describes you today? For the purpose of this survey, a developer is ""someone who writes code"".*",TRUE,MC,SAVR
+QID127,Age,What is your age?*,TRUE,MC,SAVR
+QID296,Employment,Which of the following best describes your current employment status? Select all that apply.*,TRUE,MC,MAVR
+QID308,RemoteWork,Which best describes your current work situation?,FALSE,MC,SAVR
+QID297,CodingActivities,Which of the following best describes the code you write outside of work? Select all that apply.,FALSE,MC,MAVR
+QID25,EdLevel,Which of the following best describes the highest level of formal education that you’ve completed? *,TRUE,MC,SAVR
+QID276,LearnCode,How do you learn to code? Select all that apply.,FALSE,MC,MAVR
+QID32,YearsCode,"Including any education, how many years have you been coding in total?",FALSE,MC,DL
+QID34,YearsCodePro,"NOT including education, how many years have you coded professionally (as a part of your work)?",FALSE,MC,DL
+QID31,DevType,"Which of the following describes your current job, the one you do most of the time? Please select only one.",FALSE,MC,SAVR
+QID29,OrgSize,"Approximately how many people are employed by the company or organization you currently work for?  This should only include your primary company, and not the entire holding or parent company if that applies.",FALSE,MC,SAVR
+QID51,CompTotal,"What is your current total <b>annual</b> compensation (salary, bonuses, and perks, before taxes and deductions)? Please enter a whole number in the box below, without any punctuation.  If you are paid hourly, please estimate an equivalent yearly salary. If you prefer not to answer, please leave the box empty. ",FALSE,TE,SL
+QID233,Language,"Which <b>programming, scripting, and markup languages</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the language and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID262,Database,"Which <b>database environments </b>have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the database and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID263,Platform,"Which <b>cloud platforms</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the platform and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID264,Webframe,"Which <b>web frameworks and web technologies</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID340,Embedded,"Which <b>embedded systems and technologies</b> have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the framework and want to continue to do so, please check both boxes in that row.)",FALSE,Matrix,Likert
+QID71,OpSys,What is the primary <b>operating system</b> in which you work? ,FALSE,Matrix,Likert
+QID327,AISearchDev,"Which <b>AI-powered search and developer tools</b> did you use regularly over the past year, and which do you want to work with over the next year? Select all that apply.",FALSE,Matrix,Likert
+QID314,AISelect,Do you currently use AI tools in your development process? *,TRUE,MC,SAVR
+QID324,AIBen,"For the AI tools you use as part of your development workflow, what are the MOST important benefits you are hoping to achieve? Please check all that apply.",FALSE,MC,MAVR
+QID316,AIAcc,How much do you trust the accuracy of the output from AI tools as part of your development workflow?,FALSE,MC,SAVR
+QID319,AITool,Which parts of your development workflow are you currently using AI tools for and which are you interested in using AI tools for over the next year?  Please select all that apply.,FALSE,Matrix,Likert
+QID338,AIThreat,Do you believe AI is a threat to your current job?,FALSE,MC,SAVR
+QID339,AIEthics,Which AI ethical responsibilities are most important to you?  Select all that apply.,FALSE,MC,MAVR
+QID346,AIChallenges,What are the challenges to your company/whole team using AI code assistants or GenAI tools? Select all that apply.,FALSE,MC,MAVR
+QID287,ICorPM,Are you an individual contributor or people manager?,FALSE,MC,SAVR
+QID288,WorkExp,How many years of working experience do you have?,FALSE,Slider,HSLIDER
+QID342,Frustration,Which of these company challenges causes you the most frustration? Select all that apply.,FALSE,MC,MAVR
+QID326,Industry,What industry is the company you work for in?,FALSE,MC,SAVR
+QID336,JobSat,How satisfied are you in your current professional developer role?,FALSE,MC,NPS
