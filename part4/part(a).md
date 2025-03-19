@@ -78,6 +78,41 @@ Observed RMS error: `≈ 125,755,957`
 **Note:** Despite the dramatic increase in computational cost, the RMS error is far worse. This suggests that the excessive complexity (and likely numerical instability or overfitting) of a `degree-3 expansion` does not yield a better model.
 
 
+<h3 style="color:#7216e6">Comparison of Complexity vs. RMS Error</h3>
+
+<h4 style="color:#FF5733">(a) Basic Linear Model:</h4>
+
+• Complexity: `O(n·d)`
+• RMS error: `~160,217`
+
+<h4 style="color:#FF5733">(b) Feature Engineering with K-Means:</h4>
+
+• Complexity: `O(n·d)` (with a higher constant due to clustering)
+• RMS error: `~145,051`
+
+<h4 style="color:#FF5733">(c) Ridge with Degree-2 Expansion:</h4>
+
+• Complexity: `O(n·d²)`
+• RMS error: `~137,528`
+**Best performance achieved with a moderate increase in computational cost.**
+
+<h4 style="color:#FF5733">(d) Degree-3 Polynomial Expansion:</h4>
+
+• Complexity: `O(n·d³)`
+• RMS error: `~125,755,957`
+**The enormous increase in flops (and hence computational cost) does not pay off—in fact, performance degrades dramatically.**
+
+<h3 style="color:#7216e6">Final Discussion</h3>
+<p>While the basic and cluster-enhanced models (a) and (b) require only a linear number of flops in the number of features <code>(O(n·d))</code>, adding a second-order polynomial expansion (as in model (c)) increases the computation to roughly <code>O(n·d²)</code>. This extra cost is justified by a noticeable improvement in RMS error. In contrast, pushing to a degree-3 expansion (model (d)) causes a combinatorial explosion in the number of basis functions <code>(approximately O(d³))</code> and correspondingly in the number of flops, but the model’s performance suffers drastically.
+</p>
+
+<p>
+Thus, the trade-off is clear: modest increases in model complexity (and computational cost) can yield improved accuracy, but excessive complexity leads both to a dramatic increase in flops and to degraded performance.
+</p>
+
+<p>
+This analysis shows that the best balance in this experiment is achieved by the regularized ridge model with a second-order expansion (model (c)), which, while more expensive than the basic or clustering models, achieves the lowest RMS error among the evaluated models.
+</P>
 
 
 
